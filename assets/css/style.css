@@ -1,0 +1,81 @@
+#navigation {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#parallax {
+    background-image: url('../img/img1.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#landing { 
+    margin-bottom: 0px;
+}
+
+#parallax2 {
+    background-image: url('../img/img2.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#about { 
+    padding-top: 50px; 
+    margin-bottom: 50px;
+}
+
+#aboutDescription {
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+
+/* Marketing Grid */
+.app-block-marketing-grid .container {
+    margin-bottom: -60px;
+}
+.app-marketing-grid .m-b {
+    margin-bottom: 10px !important;
+}
+@media (max-width: 768px) {
+    .app-marketing-grid .m-b-lg {
+        margin-bottom: 40px !important;
+    }
+}
+.text-xs-center {
+    text-align: center; 
+}
+.mb-1 {
+    margin-bottom: 0.25rem !important;
+    width: 200px;
+    height: 200px;
+}
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+.px-4 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important; 
+}
+
+#parallax3 {
+    background-image: url('../img/img4.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slideshowImg {
+    width: 200px;
+    height: 600px;
+}
