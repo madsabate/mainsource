@@ -13,6 +13,12 @@
     background-size: cover;
 }
 
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment:scroll;
+    }
+}
+
 #landing { 
     margin-bottom: 0px;
 }
