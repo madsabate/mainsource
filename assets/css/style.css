@@ -75,7 +75,24 @@
     background-size: cover;
 }
 
+#projects {
+    margin-bottom: 0px;
+}
+
 .slideshowImg {
     width: 200px;
     height: 600px;
+}
+
+#parallax4{
+    background-image: url('../img/img5.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact {
+    margin-bottom: 0px;
 }
