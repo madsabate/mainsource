@@ -1,3 +1,8 @@
+#logo1 {
+    width: 100x;
+    height: 100px;
+}
+
 #navigation {
     position: fixed;
     width: 100%;
@@ -85,9 +90,14 @@
     margin-bottom: 0px;
 }
 
-.slideshowImg {
-    width: 200px;
-    height: 600px;
+#projects img {
+    width: 250px;
+    max-height: 250px;
+}
+
+.completedProjects {
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 #parallax4{
@@ -97,6 +107,24 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#location {
+    margin-bottom: 0px;
+}
+
+#parallax5 {
+    background-image: url('../img/img6.jpg');
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#map{
+    height: 500px;
+    width: 100%;
 }
 
 #contact {
