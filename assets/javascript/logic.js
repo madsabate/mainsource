@@ -61,3 +61,10 @@ function initMap() {
         window.open(link, '_blank');
     });
 }
+
+$(function() {
+    $('.pop').on('click', function() {
+        $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+        $('#imagemodal').modal('show');   
+    });		
+});
