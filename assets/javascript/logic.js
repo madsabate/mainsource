@@ -45,20 +45,35 @@ sr.reveal('.contactUs', {origin: 'left'}, 100);
 //Google Map API
 function initMap() {
     var uluru = {lat: 40.7194581, lng: -74.1871191};
+    var uluru2 = {lat: 40.8212506, lng: -75.0774481 }
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
         center: uluru,
+    });
+    var map2 = new google.maps.Map (document.getElementById('map2'), {
+        zoom: 15,
+        center: uluru2,
     });
     var marker = new google.maps.Marker ({
         position: uluru,
         map: map,
         title: '59-61 Poinier Street, Newark NJ 07144'
     });
+    var marker2 = new google.maps.Marker ({
+        position: uluru2,
+        map: map2,
+        title: '616 Hardwick Street, Belvidere, NJ 07823'
+    })
 
     var link = 'https://www.google.com/maps/place/59+Poinier+St+%2361,+Newark,+NJ+07114/@40.7193462,-74.1882161,17z/data=!3m1!4b1!4m5!3m4!1s0x89c253117dd70c23:0xce92b35656e74785!8m2!3d40.7193422!4d-74.1860274'
+    var link2 = 'https://www.google.com/maps/place/616+Hardwick+St,+Belvidere,+NJ+07823/@40.8212506,-75.0774481,17z/data=!3m1!4b1!4m5!3m4!1s0x89c47a323190e67f:0x2634cf4e9766a099!8m2!3d40.8212506!4d-75.0752594'
 
     marker.addListener('click', function () {
         window.open(link, '_blank');
+    });
+
+    marker2.addListener('click', function () {
+        window.open(link2, '_blank');
     });
 }
 
