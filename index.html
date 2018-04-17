@@ -60,7 +60,8 @@
         <div class='container text-xs-center'>
             <div class='row mb-5'>
 
-                <div class='col-xs-10 offset-xs-1 col-sm-8  offset-sm-2 col-lg-6 offset-lg-3 aboutContent'>
+                <div class='col-xs-10 offset-xs-1 col-sm-8  offset-sm-2 col-lg-6 `
+                offset-lg-3 aboutContent'>
                     <h3 class='lead' id='aboutHeader'>Here at
                         <b>MAINSOURCE</b> our company's goals are four-fold:</h3>
                 </div>
@@ -152,47 +153,46 @@
         </div>
     </div>
 
-        <div id='parallax4' class='parallax'></div>
+    <div id='parallax4' class='parallax'></div>
 
-        <div class='jumbotron' id='location'>
-            <h1 class='display-4 map'>Location</h1>
-            <div class='row'>
-                <p class='lead address'>59-61 Poinier Street, Newark NJ 07144</p>
-            </div>
-            <div class='row'>
-                <div class='col-md-12' id='map'></div>
-            </div>
+    <div class='jumbotron' id='location'>
+        <h1 class='display-4 map'>Location</h1>
+        <div class='row'>
+            <p class='lead address'>59-61 Poinier Street, Newark NJ 07144</p>
         </div>
-
-        <div id='parallax5' class='parallax'></div>
-
-        <div class='jumbotron' id='contact'>
-            <h1 class='display-4 contactUs'>Contact Us</h1>
-            <p class='lead contactUs'>Telephone # (973) 353-0988</p>
-            <p class='lead contactUs'>Fax # (973) 353-0994</p>
-            <p class='lead contactUs'>Hours of Operation 8 AM - 5 PM Monday-Friday</p>
-
-            <form>
-                <div class='row'>
-                    <div class='col'>
-                        <input type='text' class='form-control contactUs' placeholder='First name'>
-                    </div>
-                    <div class='col'>
-                        <input type='text' class='form-control contactUs' placeholder='Last name'>
-                    </div>
-                </div>
-                <div class='form-group'>
-                    <label for='exampleFormControlInput1' class='contactUs'>Email Address</label>
-                    <input type='email' class='form-control contactUs' id='exampleFormControlInput1' placeholder='name@example.com'>
-                </div>
-                <div class='form-group'>
-                    <label for='exampleformControlTextarea1' class='contactUs'>Questions? Concerns? Comments? Send us an email.</label>
-                    <textarea class='form-control contactUs' id='exampleFormControlTextarea1' rows='3'></textarea>
-                </div>
-                <button type='submit' class='btn btn-success contactUs'>Submit</button>
-            </form>
+        <div class='row'>
+            <div class='col-md-12' id='map'></div>
         </div>
+    </div>
 
+    <div id='parallax5' class='parallax'></div>
+
+    <div class='jumbotron' id='contact'>
+        <h1 class='display-4 contactUs'>Contact Us</h1>
+        <p class='lead contactUs'>Telephone # (973) 353-0988</p>
+        <p class='lead contactUs'>Fax # (973) 353-0994</p>
+        <p class='lead contactUs'>Hours of Operation 8 AM - 5 PM Monday-Friday</p>
+
+        <form action='https://formspree.io/eldielu@mainsourcemetal.com' method='POST'>
+            <div class='row'>
+                <div class='col'>
+                    <input name='name' type='text' class='form-control contactUs' placeholder='First name'>
+                </div>
+                <div class='col'>
+                    <input name='name' type='text' class='form-control contactUs' placeholder='Last name'>
+                </div>
+            </div>
+            <div class='form-group'>
+                <label for='exampleFormControlInput1' class='contactUs'>Email Address</label>
+                <input name='_replyto' type='email' class='form-control contactUs' id='exampleFormControlInput1' placeholder='name@example.com'>
+            </div>
+            <div class='form-group'>
+                <label for='exampleformControlTextarea1' class='contactUs'>Questions? Concerns? Comments? Send us an email.</label>
+                <textarea name='message' class='form-control contactUs' id='exampleFormControlTextarea1' rows='3'></textarea>
+            </div>
+            <button type='submit' value='Send' name='action' class='btn btn-success contactUs'>Submit</button>
+        </form>
+    </div>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -203,7 +203,6 @@
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
     crossorigin="anonymous"></script>
-</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvfzb3yRkpeN6sD61My4DeeZhjyDCEGZI&callback=initMap" async
     defer></script>
 
